@@ -1,8 +1,12 @@
-<form>
+<form (submit)="convertJsonToCsv(jsonInput)">
     <img src="assets/json_icon.png">
-
-    <input type="text" placeholder="JSON" class="form-control">
-
-    <input type="button" value="Enviar" class="btn btn-primary">
-
+    
+    <label for="jsonInput">JSON:</label>
+    <textarea id="jsonInput" [(ngModel)]="jsonInput"></textarea>
+            
+    <button type="submit" class="btn btn-primary">Converter</button>
+    
+    <label for="csv">CSV:</label>
+    <textarea id="csv" [value]="csv"></textarea>
+    
 </form>
