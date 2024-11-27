@@ -2,11 +2,11 @@
     <img src="assets/json_icon.png">
     
     <label for="jsonInput">JSON:</label>
-    <textarea id="jsonInput" [(ngModel)]="jsonInput"></textarea>
+    <textarea id="jsonInput" [(ngModel)]="jsonInput" [ngModelOptions]="{standalone: true}"></textarea>
             
     <button type="submit" class="btn btn-primary">Converter</button>
     
     <label for="csv">CSV:</label>
-    <textarea id="csv" [value]="csv"></textarea>
+    <textarea id="csv" [(ngModel)]="csv" [ngModelOptions]="{standalone: true}"></textarea>
     
 </form>
