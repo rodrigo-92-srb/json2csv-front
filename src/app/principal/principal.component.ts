@@ -27,7 +27,7 @@ export class PrincipalComponent {
         this.apiMessage = "Conversão realizada com sucesso!";
         console.log(response);
       }else {
-        this.showSuccess = true;
+        this.showSuccess = false;
         this.showDanger = true;
         this.apiMessage = response.message;
         console.log(response.message);
