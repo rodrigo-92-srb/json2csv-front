@@ -9,4 +9,6 @@
     <label for="csv">CSV:</label>
     <textarea id="csv" [(ngModel)]="csv" [ngModelOptions]="{standalone: true}"></textarea>
     
+    <p class="alert alert-success" [hidden]="!showSuccess">{{apiMessage}}</p>
+    <p class="alert alert-danger" [hidden]="!showDanger">{{apiMessage}}</p>
 </form>
