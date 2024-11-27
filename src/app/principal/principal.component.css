@@ -1,6 +1,7 @@
 img{
     display: block;
     width: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -18,6 +19,11 @@ textarea{
 }
 
 button{  
+    display: inline-block;
+    margin-right: 10px;
+}
+
+label{
     display: block;
     margin: 20px auto;
 }

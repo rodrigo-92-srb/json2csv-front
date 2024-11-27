@@ -1,12 +1,15 @@
 <form (submit)="convertJsonToCsv(jsonInput)">
     <img src="assets/json_icon.png">
     
-    <label for="jsonInput">JSON:</label>
+    <label for="jsonInput"><h3>JSON:</h3></label>
     <textarea id="jsonInput" [(ngModel)]="jsonInput" [ngModelOptions]="{standalone: true}"></textarea>
             
     <button type="submit" class="btn btn-primary">Converter</button>
+    <button type="button" class="btn btn-secondary" (click)="clearTextareas()">Limpar</button>
     
-    <label for="csv">CSV:</label>
+    <img src="assets/csv_icon.png">
+
+    <label for="csv"><h3>CSV:</h3></label>
     <textarea id="csv" [(ngModel)]="csv" [ngModelOptions]="{standalone: true}"></textarea>
     
     <p class="alert alert-success" [hidden]="!showSuccess">{{apiMessage}}</p>

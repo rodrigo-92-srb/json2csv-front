@@ -47,4 +47,12 @@ export class PrincipalComponent {
       return 'Erro ao converter o JSON para CSV. Tente novamente.';
     }
   }
+
+  clearTextareas() {
+    this.csv = '';
+    this.jsonInput = '';
+    this.apiMessage = '';
+    this.showSuccess = false;
+    this.showDanger = false;
+  }
 }
