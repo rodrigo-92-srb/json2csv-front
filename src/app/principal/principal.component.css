@@ -8,12 +8,12 @@ img{
 }
 
 form{
-    width: 500px;
+    width: 600px;
     margin: 30px auto;
     text-align: center;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa7e;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ddddddce;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -67,4 +67,9 @@ label{
 #csv {
     width: 500px;
     height: 200px;
+}
+
+h2{
+    text-align: center;
+    color: #007bff;
 }
