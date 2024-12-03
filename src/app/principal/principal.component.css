@@ -75,3 +75,34 @@ h2{
     text-align: center;
     color: #007bff;
 }
+
+.animated-title{
+    font-size: 30px; /* Tamanho inicial */
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgb(84, 212, 255), rgb(2, 2, 236));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fontPulse 2s infinite ease-in-out, gradientShift 3s infinite linear;
+}
+
+@keyframes fontPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes gradientShift {
+    0% {            
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;        
+    }
+}
